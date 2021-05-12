@@ -4,7 +4,7 @@ body {
   width: 100%;
   max-width: 100%;
   /* width: 100vw; */
-  font-size: 18px;
+  font-size: 16px;
   color: black;
   background-color: rgb(224, 227, 220);
   margin: 0px;
@@ -14,37 +14,59 @@ body {
 table {
   width: 100%;
   /* width: 100vw; */
-  padding: 18px;
+  padding: 8px;
+  /* padding-top: 0px; */
+  border-collapse: separate;
+  border-spacing: 0px;
 }
 
+/* th,
+td {
+  border: 1px solid black;
+} */
+
 .group-header {
-  padding-top: 18px;
+  /* padding-top: 4px; */
   text-align: left;
   font-weight: bold;
+  /* border-top: 1px solid black; */
+}
+
+.group-header > span {
+  display: inline-block;
+  transform: scale(1, 0.8);
+  -webkit-transform: scale(1, 0.8); /* Safari and Chrome */
+  -moz-transform: scale(1, 0.8); /* Firefox */
+  -ms-transform: scale(1, 0.8); /* IE 9+ */
+  -o-transform: scale(1, 0.8); /* Opera */
+}
+.group-header > span:first-child {
+  font-size: 16px;
+}
+.group-header > span:nth-child(2) {
+  font-size: 13px;
+}
+.group-header > span:nth-child(3) {
+  font-size: 10px;
 }
 
 .subgroup-header {
   font-weight: normal;
   text-align: right;
-  /* padding-right: 54px; */
-  padding-top: 2px;
-  /* padding-bottom: 3px; */
-  padding-right: 46px;
+  /* padding-top: 2px; */
 }
 
-.subgroup-header > span {
+.subgroup-header > span:first-child {
   border-bottom: 1px solid black;
 }
 
 /* .item {
-
 } */
 
 .item-name {
   text-align: right;
-  padding-right: 18px;
 }
 
-/* .item-price {
+.item-price {
   text-align: right;
-} */
+}
