@@ -1,35 +1,50 @@
 html,
 body {
-  font-family: Verdana, Calibri, "Trebuchet MS", sans-serif;
+  font-family: Verdana, "Trebuchet MS", sans-serif;
   width: 100%;
   max-width: 100%;
-  /* width: 100vw; */
   font-size: 16px;
-  color: black;
-  background-color: rgb(224, 227, 220);
   margin: 0px;
   overflow-x: hidden;
+  color: black;
+  background-color: rgb(214, 212, 196);
+}
+
+.header-container {
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.title {
+  font-weight: bold;
+  text-decoration: underline;
+  display: inline-block;
+  transform: scale(1, 0.75);
+  -webkit-transform: scale(1, 0.75); /* Safari and Chrome */
+  -moz-transform: scale(1, 0.75); /* Firefox */
+  -ms-transform: scale(1, 0.75); /* IE 9+ */
+  -o-transform: scale(1, 0.75); /* Opera */
+}
+
+.emoticon {
+  font-size: 60px;
 }
 
 table {
   width: 100%;
-  /* width: 100vw; */
   padding: 8px;
-  /* padding-top: 0px; */
+  padding-right: 14px;
   border-collapse: separate;
   border-spacing: 0px;
 }
 
-/* th,
-td {
-  border: 1px solid black;
-} */
-
 .group-header {
-  /* padding-top: 4px; */
   text-align: left;
   font-weight: bold;
-  /* border-top: 1px solid black; */
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
 }
 
 .group-header > span {
@@ -43,10 +58,10 @@ td {
 .group-header > span:first-child {
   font-size: 16px;
 }
-.group-header > span:nth-child(2) {
+.group-header > span:nth-child(3) {
   font-size: 13px;
 }
-.group-header > span:nth-child(3) {
+.group-header > span:nth-child(5) {
   font-size: 10px;
 }
 
@@ -57,7 +72,7 @@ td {
 }
 
 .subgroup-header > span:first-child {
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 /* .item {
@@ -69,4 +84,12 @@ td {
 
 .item-price {
   text-align: right;
+}
+
+.color-subcategory {
+  color: #8d6d4f;
+}
+
+.color-price {
+  color: rgb(160, 113, 44);
 }
